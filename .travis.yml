@@ -8,7 +8,4 @@ cache: npm
 before_install:
   - ls -la
   - pwd
-  - mkdir test
-  - cd test
-  - ls -la
   

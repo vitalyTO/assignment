@@ -6,9 +6,9 @@ node_js:
 cache: npm
 
 before_install:
-  mkdir public
   - "npm config set spin false"
   - npm i -g now
+  - mkdir public 
 
 install:
   - npm install

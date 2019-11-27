@@ -5,13 +5,13 @@ node_js:
 
 cache: npm
 
-before_install:
-  - mkdir public 
-  - ls -la
 install:
-  - ls -la
   - npm install
-  - ls -la
+
+script:
+  - npm run build
+  - npm run test
+
 
   
   

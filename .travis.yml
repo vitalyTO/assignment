@@ -1,3 +1,4 @@
+#100995470
 language: node_js
 
 node_js:
@@ -6,6 +7,24 @@ node_js:
 cache: npm
 
 before_install:
-  - ls -la
-  - pwd
+  - "npm config set spin false"
+  - npm i -g now
+  - mkdir public 
+
+install:
+  - npm install
+  
+
+script:
+  - npm run build
+  - npm run test
+
+deploy: 
+  provider: script
+  script: bash scripts/deploy.sh
+  skip_cleanup: true
+
+
+
+  
   

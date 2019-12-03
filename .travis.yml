@@ -11,8 +11,9 @@ before_install:
   - npm i -g now
   - mkdir public 
 
-install: 
+install:
   - npm install
+  
 
 script:
   - npm run build
